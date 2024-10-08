@@ -6,9 +6,8 @@ export const globalContext = createContext();
 
 
 const GlobalProvider = ({children}) => {
-
-const [allApi, setAllApi] = useState([]);
-const [loading, setLoading] = useState(true);
+  const [allApi, setAllApi] = useState([]);
+  const [loading, setLoading] = useState(true);
 
 useEffect(() => {
     const getApi = async () => {
@@ -29,6 +28,7 @@ const data = {
     allApi,
     setAllApi,
     loading,
+    
 }
 
 return (
